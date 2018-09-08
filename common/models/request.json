@@ -1,0 +1,64 @@
+{
+  "name": "Request",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true,
+    "strictObjectIDCoercion": true
+  },
+  "properties": {
+    "requestorUserId": {
+      "type": "string",
+      "required": true
+    },
+    "requestorUserName": {
+      "type": "string",
+      "required": true
+    },
+    "recepientUserId": {
+      "type": "string",
+      "required": true
+    },
+    "recepientUserName": {
+      "type": "string",
+      "required": true
+    },
+    "isAnonymous": {
+      "type": "boolean",
+      "required": true
+    },
+    "validationDuration": {
+      "type": "object",
+      "required": true
+    },
+    "dateMake": {
+      "type": "date",
+      "required": true
+    },
+    "validUntil": {
+      "type": "date"
+    },
+    "validated": {
+      "type": "date"
+    },
+    "settings": {
+      "type": [
+        "object"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "default": "Pending"
+    },
+    "inTheContactSince": {
+      "type": "date"
+    },
+    "originalRequestId": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,55 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "AccessToken": {
+    "dataSource": "getokDB",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "getokDB",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "getokDB",
+    "public": false,
+    "options": {
+      "strictObjectIDCoercion": true
+    }
+  },
+  "Role": {
+    "dataSource": "getokDB",
+    "public": false
+  },
+  "getOkUser": {
+    "dataSource": "getokDB",
+    "public": true
+  },
+  "Request": {
+    "dataSource": "getokDB",
+    "public": true
+  },
+  "TmpUser": {
+    "dataSource": "getokDB",
+    "public": true
+  },
+  "Container": {
+    "dataSource": "local-storage",
+    "public": true
+  },
+  "History": {
+    "dataSource": "getokDB",
+    "public": true
+  }
+}

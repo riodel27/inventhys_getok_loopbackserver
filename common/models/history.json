@@ -1,0 +1,26 @@
+{
+  "name": "History",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "historyStatus": {
+      "type": "string",
+      "required": true
+    },
+    "dateArchived": {
+      "type": "date",
+      "required": true
+    },
+    "details": {
+      "type": "object",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
